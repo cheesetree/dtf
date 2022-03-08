@@ -5,8 +5,8 @@ go 1.16
 require (
 	bou.ke/monkey v1.0.2
 	github.com/BurntSushi/toml v0.4.1 // indirect
-	github.com/cheesetree/oracle master
 	github.com/cheesetree/dtf v1.9.3
+	github.com/cheesetree/oracle v1.2.1
 	github.com/dtm-labs/dtmdriver v0.0.1
 	github.com/dtm-labs/dtmdriver-gozero v0.0.2
 	github.com/dtm-labs/dtmdriver-polaris v0.0.4
@@ -36,4 +36,9 @@ require (
 	gorm.io/driver/postgres v1.2.1
 	gorm.io/gorm v1.22.2
 // gotest.tools v2.2.0+incompatible
+)
+
+replace (
+	github.com/dtm-labs/dtm v1.9.2 => github.com/cheesetree/dtf v1.9.2
+	github.com/dtm-labs/dtm v1.9.3 => github.com/cheesetree/dtf v1.9.3
 )
