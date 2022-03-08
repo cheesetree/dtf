@@ -17,6 +17,8 @@ const (
 	DBTypeMysql = "mysql"
 	// DBTypePostgres const for driver postgres
 	DBTypePostgres = "postgres"
+
+	DBTypeOracle = "oracle"
 	// DBTypeRedis const for driver redis
 	DBTypeRedis = "redis"
 	// Jrpc const for json-rpc

@@ -3,8 +3,8 @@ package dtmcli
 import (
 	"fmt"
 
-	"github.com/dtm-labs/dtm/dtmcli/dtmimp"
-	"github.com/dtm-labs/dtm/dtmcli/logger"
+	"github.com/cheesetree/dtf/dtmimp"
+	"github.com/cheesetree/dtf/dtmcli/logger"
 	"github.com/go-redis/redis/v8"
 )
 

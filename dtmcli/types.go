@@ -9,7 +9,7 @@ package dtmcli
 import (
 	"fmt"
 
-	"github.com/dtm-labs/dtm/dtmcli/dtmimp"
+	"github.com/cheesetree/dtf/dtmcli/dtmimp"
 	"github.com/go-resty/resty/v2"
 )
 

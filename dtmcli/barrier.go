@@ -11,8 +11,8 @@ import (
 	"fmt"
 	"net/url"
 
-	"github.com/dtm-labs/dtm/dtmcli/dtmimp"
-	"github.com/dtm-labs/dtm/dtmcli/logger"
+	"github.com/cheesetree/dtf/dtmcli/dtmimp"
+	"github.com/cheesetree/dtf/dtmcli/logger"
 )
 
 // BarrierBusiFunc type for busi func

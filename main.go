@@ -14,7 +14,7 @@ import (
 
 	"go.uber.org/automaxprocs/maxprocs"
 
-	"github.com/dtm-labs/dtm/dtmcli/logger"
+	"github.com/cheesetree/dtf/dtmcli/logger"
 	"github.com/dtm-labs/dtm/dtmsvr"
 	"github.com/dtm-labs/dtm/dtmsvr/config"
 	"github.com/dtm-labs/dtm/dtmsvr/storage/registry"

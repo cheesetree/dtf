@@ -48,6 +48,8 @@ const (
 	DBTypeMysql = dtmimp.DBTypeMysql
 	// DBTypePostgres const for driver postgres
 	DBTypePostgres = dtmimp.DBTypePostgres
+
+	DBTypeOracle = dtmimp.DBTypeOracle
 )
 
 // MapSuccess HTTP result of SUCCESS

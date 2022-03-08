@@ -4,8 +4,8 @@ import (
 	"context"
 	"strings"
 
-	"github.com/dtm-labs/dtm/dtmcli/dtmimp"
-	"github.com/dtm-labs/dtm/dtmcli/logger"
+	"github.com/cheesetree/dtf/dtmcli/dtmimp"
+	"github.com/cheesetree/dtf/dtmcli/logger"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 )

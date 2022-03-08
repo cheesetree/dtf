@@ -7,14 +7,15 @@ import (
 	"sync"
 	"time"
 
-	"github.com/dtm-labs/dtm/dtmcli"
-	"github.com/dtm-labs/dtm/dtmcli/dtmimp"
-	"github.com/dtm-labs/dtm/dtmcli/logger"
+	"github.com/cheesetree/dtf/dtmcli"
+	"github.com/cheesetree/dtf/dtmcli/dtmimp"
+	"github.com/cheesetree/dtf/dtmcli/logger"
 	_ "github.com/go-sql-driver/mysql" // register mysql driver
 	_ "github.com/lib/pq"              // register postgres driver
 	"gorm.io/driver/mysql"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
+	"github.com/cheesetree/oracle"
 )
 
 // ModelBase model base for gorm to provide base fields
@@ -27,7 +28,10 @@ type ModelBase struct {
 func getGormDialetor(driver string, dsn string) gorm.Dialector {
 	if driver == dtmcli.DBTypePostgres {
 		return postgres.Open(dsn)
+	}else if driver == dtmcli.DBTypeOracle {
+		return oracle.Open(dsn)
 	}
+	
 	dtmimp.PanicIf(driver != dtmcli.DBTypeMysql, fmt.Errorf("unknown driver: %s", driver))
 	return mysql.Open(dsn)
 }

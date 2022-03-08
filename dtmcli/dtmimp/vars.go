@@ -9,7 +9,7 @@ package dtmimp
 import (
 	"errors"
 
-	"github.com/dtm-labs/dtm/dtmcli/logger"
+	"github.com/cheesetree/dtf/dtmcli/logger"
 	"github.com/go-resty/resty/v2"
 )
 

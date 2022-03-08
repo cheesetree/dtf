@@ -1,10 +1,12 @@
-module github.com/dtm-labs/dtm
+module github.com/cheesetree/dtf
 
 go 1.16
 
 require (
 	bou.ke/monkey v1.0.2
 	github.com/BurntSushi/toml v0.4.1 // indirect
+	github.com/cheesetree/oracle master
+	github.com/cheesetree/dtf v1.9.3
 	github.com/dtm-labs/dtmdriver v0.0.1
 	github.com/dtm-labs/dtmdriver-gozero v0.0.2
 	github.com/dtm-labs/dtmdriver-polaris v0.0.4
